@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title>Cadastro</title>
+</head>
+<body id="Pg2">
+    <fieldset>
+       <a href="index.html" id="retornar">Volta</a><br>
+
+     <h2 id="titulopg2">Cadastro</h2>
+    	<form action="processo.php">
+    		<label>Nome</label> <br>
+    		<input type="text" name="Nome" ><br><br>
+
+            <label>Sobrenome</label><br>
+            <input type="text" name="Nome"><br><br>
+             
+            <label>CPF</label><br>
+            <input type="text" name="cpf" \
+            pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+            title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+            <input type="submit" value="Verificar"><br><br>
+
+            <label>Sexo</label><br>
+            <input type="radio" name="sexo" value="M">Masculino<br>
+            <input type="radio" name="sexo" value="F" >Feminino<br>
+            <input type="radio" name="sexo" value="T">Trasgenero<br><br>
+            <label>E-mail</label><br>
+            <input type="" name=""><br><br>
+
+            <label>Tipo de Pessoa</label>
+            <input type="checkbox" name="">Pessoa Fisica
+            <input type="checkbox" name="">Pessoa Juridica<br><br>
+
+            <label>Estado</label>
+            <select>
+                <option disabled>--</option>
+                <option value="sp">SP</option>
+                <option value="df">DF</option>
+                <option value="sc">SC</option>
+                <option value="rj">RJ</option>
+                <option value="rs">RS</option>
+                <option value="rn">RN</option>
+                <option value="mg">MG</option>
+                <option value="mt">MT</option>
+                <option value="ro">RO</option>
+                <option value="ma">MA</option>
+                <option value="bh">BH</option>
+                <option value="ba">BA</option>
+                <option value="pe">PE</option>
+                <option value="pa">PA</option>
+            </select><br><br>
+
+            <label>Cria senha</label><br>
+            <input type="password" name="Senha"  
+            pattern="
+            d{6}" \
+            title="Nao mostre a senha a ninguem!
+            Minimo 6 digitos*"><br><br>
+             
+  
+            <label>Confirma Senha</label><br>
+            <input type="password" name="Senha"><br><br>
+
+            <textarea></textarea><br><br>
+
+            <input type="submit" name="Finaliza Cadasro">
+
+    		
+    	</form>
+    </fieldset>
+</body>
+</html>
+
+
+
